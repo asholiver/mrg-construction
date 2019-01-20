@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Icons } from "./components";
+import "./css/Resets.css";
+import "./css/Settings.css";
+import "./css/Helpers.css";
 
 ReactDOM.render(
   <Fragment>
