@@ -1,0 +1,9 @@
+.l-footer {
+    align-items: center;
+    background-color: var(--g-color-primary);
+    display: flex;
+    height: var(--g-header-height);
+    justify-content: space-between;
+    padding: 0 var(--g-spacing);
+    width: 100%;
+}
