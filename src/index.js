@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -9,10 +10,12 @@ import "./css/Settings.css";
 import "./css/Helpers.css";
 
 ReactDOM.render(
-  <Fragment>
-    <Icons />
-    <App />
-  </Fragment>,
+  <BrowserRouter>
+    <Fragment>
+      <Icons />
+      <Route path="/" component={App} />
+    </Fragment>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
