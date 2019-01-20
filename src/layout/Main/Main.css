@@ -1,5 +1,4 @@
 .l-main {
     margin-top: var(--g-header-height);
-    padding: var(--g-spacing);
     flex: 1 0 auto;
 }
