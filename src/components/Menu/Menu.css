@@ -1,0 +1,41 @@
+.c-menu-container {
+    background-color: red;
+    width: var(--g-sidebar-width);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: calc(var(--g-sidebar-width) * -1);
+    bottom: 0;
+    transition: transform 300ms ease-in-out;
+    z-index: 1;
+}
+
+.c-menu-container.is-active {
+    transform: translateX(calc(var(--g-sidebar-width) * -1));
+}
+
+.c-menu {
+
+
+}
+
+.c-menu-item {
+
+}
+
+.c-menu-item-link {
+
+}
+
+@media only screen and (min-width: 42em) {
+    .c-menu-container {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .c-menu {
+        display: flex;
+    }
+
+}
