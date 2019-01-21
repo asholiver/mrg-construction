@@ -1,6 +1,5 @@
 .l-header {
     align-items: center;
-    background-color: var(--g-color-secondary);
     display: flex;
     height: var(--g-header-height);
     justify-content: space-between;
