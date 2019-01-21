@@ -2,7 +2,8 @@ import React, { Fragment, Component } from "react";
 import "./Page.css";
 import settings from "./../../css/Settings.css";
 import { Header, Main, Footer } from "..";
-import { Menu, MenuButton } from "./../../components";
+import { Menu, MenuButton, Image } from "./../../components";
+import logo from "./../../logo.jpg";
 
 class Page extends Component {
   updateDimensions = this.updateDimensions.bind(this);
@@ -17,7 +18,6 @@ class Page extends Component {
   updateDimensions() {
     const pxToEm = window.innerWidth / 16;
     if (pxToEm > settings.breakPoint) {
-      console.log("updating");
       this.setState({ activeMenu: false });
     }
   }
@@ -31,6 +31,7 @@ class Page extends Component {
     return (
       <Fragment>
         <Header>
+          <Image alt="company logo" src={logo} />
           <MenuButton onClick={this.toggleMenu} isActive={activeMenu} />
           <Menu isActive={activeMenu} />
         </Header>
