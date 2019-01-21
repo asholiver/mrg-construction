@@ -23,6 +23,8 @@
 
     --g-loader-size: 5rem;
     --g-header-height: 6rem;
+    --g-sidebar-width: 12rem;
+    --g-break-point: 42em;
 }
 
 .c-root {
@@ -30,3 +32,8 @@
     flex-direction: column;
     height: 100%;
 }
+
+
+/* update breakpoint to match --g-break-point */
+
+:export {breakPoint: 42}
