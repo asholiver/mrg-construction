@@ -1,0 +1,30 @@
+.c-main-nav-trigger {
+  color: $g-color-white;
+}
+
+.c-hamburger-menu__line {
+  opacity: 1;
+  transform: rotate(0) translateY(0) translateX(0);
+  transform-origin: 1rem 1rem;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.c-hamburger-menu__line-1 {
+  transform-origin: 1rem 2.25rem;
+}
+
+.c-hamburger-menu__line-3 {
+  transform-origin: 1rem 4.125rem;
+}
+
+.c-main-nav-trigger.is-active .c-hamburger-menu__line-1 {
+  transform: rotate(45deg) translateY(0) translateX(0);
+}
+
+.c-main-nav-trigger.is-active .c-hamburger-menu__line-2 {
+  opacity: 0;
+}
+
+.c-main-nav-trigger.is-active .c-hamburger-menu__line-3 {
+  transform: rotate(-45deg) translateY(0) translateX(0);
+}
