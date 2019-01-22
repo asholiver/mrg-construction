@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import { Page, Section } from "./../layout";
 
 const Home = () => {
@@ -10,24 +10,20 @@ const Home = () => {
           <p className="c-tag">Come home to quality</p>
         </div>
       </Section>
-      <Section>
+      <Section size="narrow">
+        <p className="h-spacing-large">
+          At MRG, we strive to deliver high quality finishes to make your house,
+          your home.
+        </p>
+        <p className="h-spacing-large">
+          With a over a decade of experience within the industry, MRG have the
+          capability to handle all types of residential development, from large
+          scale new builds, complex extensions to simply putting the finishing
+          touches to your home.
+        </p>
         <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32. The standard chunk of Lorem Ipsum used since the
-          1500s is reproduced below for those interested. Sections 1.10.32 and
-          1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-          reproduced in their exact original form, accompanied by English
-          versions from the 1914 translation by H. Rackham.
+          Our fully qualified tradesmen ensure that all aspects are covered, and
+          every finer detail has been finished to the highest standard.
         </p>
       </Section>
     </Page>
