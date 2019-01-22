@@ -7,7 +7,7 @@
     top: 0;
     transition: transform 300ms ease-in-out;
     width: var(--g-sidebar-width);
-    z-index: 1;
+    z-index: 2;
 }
 
 .c-menu-container.is-active {

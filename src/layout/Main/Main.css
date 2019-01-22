@@ -1,5 +1,5 @@
 .l-main {
     background-color: #f8f8f8;
     margin-top: var(--g-header-height);
-    flex: 1 0 auto;
+    flex-grow: 1;
 }

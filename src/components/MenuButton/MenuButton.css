@@ -1,6 +1,6 @@
 .c-main-nav-trigger {
     fill: var(--g-color-primary);
-    z-index: 2;
+    z-index: 3;
     transition: transform 300ms ease-in-out;
     right: 0;
     outline: none;
