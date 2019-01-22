@@ -25,22 +25,35 @@
 
 
 .c-title-container {
+    align-items: center;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 50%;
     left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    align-items: center;
 }
 
 .c-title {
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     padding-bottom: var(--g-spacing-4x-large);
 }
 .c-tag {
     font-style: italic;
+}
+
+
+@media only screen and (min-width: 42em) {
+    .c-title-container {
+        align-items: flex-start;
+        left: var(--g-spacing-4x-large);
+        transform: translateY(-50%);
+    }
+    .c-title {
+        font-size: 60px
+    }
 }
