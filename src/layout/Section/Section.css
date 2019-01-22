@@ -23,6 +23,11 @@
     position: absolute;
 }
 
+.c-section--narrow {
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
 
 .c-title-container {
     align-items: center;
@@ -56,4 +61,23 @@
     .c-title {
         font-size: 60px
     }
+
+    .c-section--narrow {
+        padding: 6rem 5rem;
+
+    }
 }
+
+@media only screen and (min-width: 48em) {
+    .c-section--narrow {
+        padding: 8rem 10rem;
+    }
+}
+
+
+@media only screen and (min-width: 80em) {
+    .c-section--narrow {
+        padding: 8rem 20rem;
+    }
+}
+
