@@ -33,6 +33,18 @@
     padding-bottom: var(--g-spacing);
 }
 
+.h-spacing-large {
+    padding-bottom: var(--g-spacing-large);
+}
+
+.h-spacing-x-large {
+    padding-bottom: var(--g-spacing-x-large);
+}
+
+.h-spacing-2x-large {
+    padding-bottom: var(--g-spacing-2x-large);
+}
+
 @media only screen and (min-width: 42em) {
     .h-hide-from-lap {
     display: none !important;
