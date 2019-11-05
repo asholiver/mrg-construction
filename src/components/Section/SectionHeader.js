@@ -2,7 +2,7 @@ import React from "react";
 import "./Section.css";
 import classNames from "classnames";
 
-const Section = ({ size, color, children }) => {
+const SectionHeader = ({ size, color, children }) => {
   const classes = classNames({
     "c-section": true,
     [`c-section--${size}`]: size == null ? false : true,
@@ -11,4 +11,4 @@ const Section = ({ size, color, children }) => {
   return <section className={classes}>{children}</section>;
 };
 
-export default Section;
+export default SectionHeader;
