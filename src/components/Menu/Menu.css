@@ -25,13 +25,14 @@
 
 .c-menu-item__link {
     border-bottom: 3px solid transparent;
-    color: var(--g-color-primary);
-    font-weight: bold;
+    color: var(--g-color-text);
+    font-weight: 400;
+    font-size: var(--g-font-size-small);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-
-@media only screen and (min-width: 42em) {
+@media only screen and (min-width: 44em) {
     .c-menu-container {
         width: 100%;
         height: auto;
@@ -53,8 +54,9 @@
 
     .c-menu-item__link {
         border-bottom: 3px solid transparent;
-        color: var(--g-color-primary);
-        font-weight: bold;
+        color: var(--g-color-text);
+        font-weight: 400;
+        font-size: var(--g-font-size-large);
         padding-bottom: var(--g-spacing-x-small);
         text-decoration: none;
     }
@@ -68,7 +70,7 @@
 
 @media only screen and (min-width: 48em) {
     .c-menu-item {
-        padding: 0 var(--g-spacing-2x-large);
+        padding: 0 var(--g-spacing-x-large);
     }
 
 }

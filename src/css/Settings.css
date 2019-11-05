@@ -3,6 +3,7 @@
     --g-color-secondary: #272529;
     --g-color-text: #fff;
     --g-color-highlight: #F9F871;
+    --g-color-background:  #e8cf7d;
 
     --g-spacing-2x-small: 0.25rem;
     --g-spacing-x-small: 0.5rem;
@@ -24,7 +25,7 @@
     --g-loader-size: 5rem;
     --g-header-height: 6rem;
     --g-sidebar-width: 12rem;
-    --g-break-point: 42em;
+    --g-break-point: 44em;
 }
 
 .c-root {

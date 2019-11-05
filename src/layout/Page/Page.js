@@ -2,7 +2,7 @@ import React, { Fragment, Component } from "react";
 import "./Page.css";
 import settings from "./../../css/Settings.css";
 import { Header, Main, Footer } from "..";
-import { Menu, MenuButton, Image } from "./../../components";
+import { Menu, MenuButton, Image, Icon } from "./../../components";
 import logo from "./../../logo.jpg";
 
 class Page extends Component {
@@ -31,7 +31,8 @@ class Page extends Component {
     return (
       <Fragment>
         <Header>
-          <Image alt="company logo" src={logo} />
+          <Icon icon="home" classes="c-logo-icon" />
+          {/* <Image alt="company logo" src={logo} /> */}
           <MenuButton onClick={this.toggleMenu} isActive={activeMenu} />
           <Menu isActive={activeMenu} />
         </Header>

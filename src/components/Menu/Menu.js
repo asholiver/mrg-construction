@@ -33,18 +33,18 @@ const MenuButton = ({ isActive }) => {
           <NavLink
             className="c-menu-item__link"
             activeClassName="is-active"
-            to="/contact"
+            to="/gallery"
           >
-            Contact
+            Gallery
           </NavLink>
         </li>
         <li className="c-menu-item ">
           <NavLink
             className="c-menu-item__link"
             activeClassName="is-active"
-            to="/gallery"
+            to="/contact"
           >
-            Gallery
+            Contact
           </NavLink>
         </li>
       </ul>

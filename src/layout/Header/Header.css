@@ -1,6 +1,6 @@
 .l-header {
     align-items: center;
-    background-color: white;
+    background-color: var(--g-color-background);
     display: flex;
     height: var(--g-header-height);
     justify-content: space-between;
@@ -11,8 +11,7 @@
     z-index: 1;
 }
 
-
-@media only screen and (min-width: 42em) {
+@media only screen and (min-width: 52em) {
     .l-header {
         padding: 0 var(--g-spacing) 0 var(--g-spacing-4x-large);
     }
