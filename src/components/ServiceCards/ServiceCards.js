@@ -11,6 +11,7 @@ const ServiceCards = ({ services }) => {
           key={index}
           title={service.title}
           services={service.services}
+          image={service.image}
         />
       ))}
     </div>

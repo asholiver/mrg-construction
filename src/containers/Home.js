@@ -24,17 +24,17 @@ const Home = () => {
   const serviceCards = [
     {
       title: "Bricklaying",
-      image: "kitchen",
+      image: "services",
       services: ["Full house builds", "Extensions", "Boundary walls", "Garages"]
     },
     {
       title: "Ground works",
-      image: "kitchen",
+      image: "services",
       services: ["Driveways", "Gardens", "Foundation work"]
     },
     {
       title: "Fittings",
-      image: "kitchen",
+      image: "kitchen2",
       services: ["Bathrooms", "Kitchens", "Fireplaces"]
     },
     {
