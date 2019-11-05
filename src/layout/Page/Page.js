@@ -31,8 +31,11 @@ class Page extends Component {
     return (
       <Fragment>
         <Header>
-          <Icon icon="home" classes="c-logo-icon" />
-          {/* <Image alt="company logo" src={logo} /> */}
+          <Fragment>
+            <Icon icon="home" classes="c-logo-icon" size="large" />
+            <h1 className="c-company-title">Winsor Construction</h1>
+          </Fragment>
+
           <MenuButton onClick={this.toggleMenu} isActive={activeMenu} />
           <Menu isActive={activeMenu} />
         </Header>

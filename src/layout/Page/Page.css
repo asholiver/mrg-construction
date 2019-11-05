@@ -1,3 +1,17 @@
 .c-logo-icon {
     color: var(--g-color-text);
+    margin-right: var(--g-spacing);
+}
+
+.c-company-title {
+    font-size: var(--g-font-size-large);
+    color: var(--g-color-text);
+    display: none;
+}
+
+
+@media only screen and (min-width: 55em) {
+    .c-company-title {
+        display: block;
+    }
 }

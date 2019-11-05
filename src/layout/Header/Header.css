@@ -11,7 +11,7 @@
     z-index: 1;
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 66em) {
     .l-header {
         padding: 0 var(--g-spacing) 0 var(--g-spacing-4x-large);
     }
