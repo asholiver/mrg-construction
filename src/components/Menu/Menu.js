@@ -24,7 +24,7 @@ const MenuButton = ({ isActive }) => {
           <NavLink
             className="c-menu-item__link"
             activeClassName="is-active"
-            to="/about_us"
+            to="/services"
           >
             Services
           </NavLink>

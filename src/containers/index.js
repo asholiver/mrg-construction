@@ -1,3 +1,6 @@
+import Contact from "./Contact";
+import Gallery from "./Gallery";
 import Home from "./Home";
+import Services from "./Services";
 
-export { Home };
+export { Contact, Gallery, Home, Services };

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import { Icons } from "./components";
-import { Home } from "./containers";
+import { Contact, Gallery, Home, Services } from "./containers";
 import "./css/Settings.css";
 import "./css/Resets.css";
 import "./css/Shame.css";
@@ -13,7 +13,10 @@ ReactDOM.render(
   <BrowserRouter>
     <Fragment>
       <Icons />
-      <Route path="/" component={Home} />
+      <Route exact path="/" component={Home} />
+      <Route path="/services" component={Services} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/gallery" component={Gallery} />
     </Fragment>
   </BrowserRouter>,
   document.getElementById("root")
