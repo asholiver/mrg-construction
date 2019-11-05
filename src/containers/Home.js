@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Page } from "./../layout";
-import { Section } from "./../components";
+import { ImageSection, Section } from "./../components";
 import settings from "./../css/Settings.css";
 import services from "./../services.jpg";
 
@@ -23,11 +23,11 @@ const Home = () => {
       activeMenu={activeMenu}
       triggerMenu={() => setActiveMenu(!activeMenu)}
     >
-      <Section image="kitchen">
+      <ImageSection image="kitchen">
         <div className="c-title-container">
           <h1 className="c-title c-title-company">Winsor Construction</h1>
         </div>
-      </Section>
+      </ImageSection>
       <Section color="gold" size="narrow">
         <p className="h-spacing-large">
           At Winsor construction, we strive to deliver high quality finishes to
