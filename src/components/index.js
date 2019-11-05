@@ -4,6 +4,7 @@ import ImageSection from "./ImageSection";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
 import { Section, SectionContent, SectionHeader } from "./Section";
+import { ServiceCard, ServiceCards } from "./ServiceCards";
 
 export {
   Icon,
@@ -14,5 +15,7 @@ export {
   MenuButton,
   Section,
   SectionContent,
-  SectionHeader
+  SectionHeader,
+  ServiceCard,
+  ServiceCards
 };

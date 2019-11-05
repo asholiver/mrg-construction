@@ -1,0 +1,38 @@
+
+.l-grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.l-grid__item {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+.l-grid__item--12-col {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 42em) {
+
+    .l-grid__item--6-col-from-lap {
+        width: 50%;
+    }
+
+    .c-testimonial__text {
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width: 75em) {
+    .l-grid__item--3-col-from-desk {
+        width: 25%;
+    }
+}
