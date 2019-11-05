@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Page } from "./../layout";
-import { ImageSection, Section } from "./../components";
+import {
+  ImageSection,
+  Section,
+  SectionHeader,
+  SectionContent
+} from "./../components";
 import settings from "./../css/Settings.css";
 import services from "./../services.jpg";
 
@@ -13,6 +18,35 @@ const Home = () => {
       setActiveMenu(false);
     }
   };
+
+  const serviceCards = [
+    {
+      title: "Bricklaying",
+      image: "kitchen",
+      services: ["Full house builds", "Extensions", "Boundary walls", "Garages"]
+    },
+    {
+      title: "Ground works",
+      image: "kitchen",
+      services: ["Driveways", "Gardens", "Foundation work"]
+    },
+    {
+      title: "Fittings",
+      image: "kitchen",
+      services: ["Bathrooms", "Kitchens", "Fireplaces"]
+    },
+    {
+      title: "Finishing",
+      image: "kitchen",
+      services: [
+        "Plastering",
+        "Door hanging",
+        "Window fitting",
+        "Skirting/Architrave",
+        "Electrics"
+      ]
+    }
+  ];
 
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
@@ -28,27 +62,28 @@ const Home = () => {
           <h1 className="c-title c-title-company">Winsor Construction</h1>
         </div>
       </ImageSection>
-      <Section color="gold" size="narrow">
-        <p className="h-spacing-large">
-          At Winsor construction, we strive to deliver high quality finishes to
-          make your house, your home.
-        </p>
-        <p className="h-spacing-large">
-          With a over 4 decades of experience within the industry, we have the
-          capability to handle all types of residential development, from large
-          scale new builds, complex extensions to simply putting the finishing
-          touches to your home.
-        </p>
-        <p>
-          Our fully qualified tradesmen ensure that all aspects are covered, and
-          every finer detail has been finished to the highest standard.
-        </p>
+      <Section>
+        <SectionContent size="narrow">
+          <p className="h-spacing-large">
+            At Winsor construction, we strive to deliver high quality finishes
+            to make your house, your home.
+          </p>
+          <p className="h-spacing-large">
+            With a over 4 decades of experience within the industry, we have the
+            capability to handle all types of residential development, from
+            large scale new builds, complex extensions to simply putting the
+            finishing touches to your home.
+          </p>
+          <p>
+            Our fully qualified tradesmen ensure that all aspects are covered,
+            and every finer detail has been finished to the highest standard.
+          </p>
+        </SectionContent>
       </Section>
-      <div className="ct-section">
-        <div className="ct-section__header ct-section__header--underline">
-          <h3 className="ct-section__title">Our services</h3>
-        </div>
-        <div className="ct-section__content">
+
+      <Section>
+        <SectionHeader isUnderlined={true} title="Our services" />
+        <SectionContent>
           <div className="l-grid">
             <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap l-grid__item--3-col-from-desk">
               <div className="c-card">
@@ -113,9 +148,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <Section>
+        </SectionContent>
+      </Section>
+      <Section color="grey">
         <div className="l-grid">
           <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap">
             <img

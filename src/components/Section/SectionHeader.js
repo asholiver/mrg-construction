@@ -2,13 +2,16 @@ import React from "react";
 import "./Section.css";
 import classNames from "classnames";
 
-const SectionHeader = ({ size, color, children }) => {
+const SectionHeader = ({ title, isUnderlined }) => {
   const classes = classNames({
-    "c-section": true,
-    [`c-section--${size}`]: size == null ? false : true,
-    [`c-section--${color}`]: color == null ? false : true
+    "c-section__header": true,
+    "c-section__header--underline": isUnderlined
   });
-  return <section className={classes}>{children}</section>;
+  return (
+    <div className={classes}>
+      <h3 className="c-section__title">{title}</h3>
+    </div>
+  );
 };
 
 export default SectionHeader;
