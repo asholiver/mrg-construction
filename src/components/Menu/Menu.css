@@ -1,4 +1,5 @@
 .c-menu-container {
+    background-color: var(--g-color-background);
     bottom: 0;
     height: 100%;
     padding-top: var(--g-header-height);
@@ -15,19 +16,20 @@
 }
 
 .c-menu {
-
+    border-top: 1px solid var(--g-color-text);
+    padding: var(--g-spacing);
 
 }
 
 .c-menu-item {
-
+    padding-bottom:  var(--g-spacing-small);
 }
 
 .c-menu-item__link {
     border-bottom: 3px solid transparent;
     color: var(--g-color-text);
     font-weight: 400;
-    font-size: var(--g-font-size-small);
+    font-size: var(--g-font-size-large);
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -41,10 +43,11 @@
     }
 
     .c-menu {
+        border: 0;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding: 0 var(--g-spacing);
+        padding: 0;
     }
 
     .c-menu-item {

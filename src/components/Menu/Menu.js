@@ -33,9 +33,9 @@ const MenuButton = ({ isActive }) => {
           <NavLink
             className="c-menu-item__link"
             activeClassName="is-active"
-            to="/gallery"
+            to="/projects"
           >
-            Gallery
+            Projects
           </NavLink>
         </li>
         <li className="c-menu-item ">
