@@ -12,7 +12,7 @@ const Section = ({ image, hasShadow, size, color, children }) => {
   return (
     <section className={classes}>
       {hasShadow ? <div className="c-section--overlay" /> : null}
-      {children}
+      {children} {hasShadow}
     </section>
   );
 };

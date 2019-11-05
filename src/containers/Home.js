@@ -1,23 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Page, Section } from "./../layout";
+import settings from "./../css/Settings.css";
 import services from "./../services.jpg";
 
 const Home = () => {
+  const [activeMenu, setActiveMenu] = useState(false);
+
+  const updateDimensions = () => {
+    const pxToEm = window.innerWidth / 16;
+    if (pxToEm > settings.breakPoint) {
+      setActiveMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+  }, []);
+
   return (
-    <Page>
-      <Section image="kitchen" hasShadow={true}>
+    <Page
+      activeMenu={activeMenu}
+      triggerMenu={() => setActiveMenu(!activeMenu)}
+    >
+      <Section image="kitchen">
         <div className="c-title-container">
-          <h1 className="c-title">MRG Construction</h1>
-          <p className="c-tag">Come home to quality</p>
+          <h1 className="c-title c-title-company">Winsor Construction</h1>
         </div>
       </Section>
-      <Section color="white" size="narrow">
+      <Section color="gold" size="narrow">
         <p className="h-spacing-large">
-          At MRG, we strive to deliver high quality finishes to make your house,
-          your home.
+          At Winsor construction, we strive to deliver high quality finishes to
+          make your house, your home.
         </p>
         <p className="h-spacing-large">
-          With a over a decade of experience within the industry, MRG have the
+          With a over 4 decades of experience within the industry, we have the
           capability to handle all types of residential development, from large
           scale new builds, complex extensions to simply putting the finishing
           touches to your home.
@@ -27,44 +43,79 @@ const Home = () => {
           every finer detail has been finished to the highest standard.
         </p>
       </Section>
-      <Section>
-        <div className="l-grid">
-          <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap">
-            <img
-              className="c-testimonial__image"
-              alt="bathroom"
-              src={services}
-            />
-          </div>
-          <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap">
-            <div className="c-testimonial">
-              <dl className="c-testimonial__list">
-                <div>
-                  <dt className="c-testimonial__title">Shelley Christie</dt>
-                  <dd className="c-testimonial__text">
-                    Fantastic work....very well priced and top professional
-                    results.
-                  </dd>
+      <div className="ct-section">
+        <div className="ct-section__header ct-section__header--underline">
+          <h3 className="ct-section__title">Our services</h3>
+        </div>
+        <div className="ct-section__content">
+          <div className="l-grid">
+            <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap l-grid__item--3-col-from-desk">
+              <div className="c-card">
+                <div className="c-card__header">
+                  <h2 className="c-card__title">Bricklaying</h2>
                 </div>
-                <div>
-                  <dt className="c-testimonial__title">Martyn Sign</dt>
-                  <dd className="c-testimonial__text">
-                    Great work. Honest and reliable. Couldn’t ask for more.
-                    Highly recommended!
-                  </dd>
+                <div className="c-card__content">
+                  <ul className="c-list">
+                    <li className="c-list__item">Full house builds</li>
+                    <li className="c-list__item">Extensions</li>
+                    <li className="c-list__item">Boundary walls</li>
+                    <li className="c-list__item">Garages</li>
+                  </ul>
                 </div>
-                <div>
-                  <dt className="c-testimonial__title">Andy Christie</dt>
-                  <dd className="c-testimonial__text">
-                    Loads of experience... gives good advice
-                  </dd>
+              </div>
+            </div>
+
+            <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap l-grid__item--3-col-from-desk">
+              <div className="c-card">
+                <div className="c-card__header">
+                  <h2 className="c-card__title">Ground works</h2>
                 </div>
-              </dl>
+                <div className="c-card__content">
+                  <ul className="c-list">
+                    <li className="c-list__item">Driveways</li>
+                    <li className="c-list__item">Gardens</li>
+                    <li className="c-list__item">Foundation work</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap l-grid__item--3-col-from-desk">
+              <div className="c-card">
+                <div className="c-card__header">
+                  <h2 className="c-card__title">Fittings</h2>
+                </div>
+                <div className="c-card__content">
+                  <ul className="c-list">
+                    <li className="c-list__item">Bathrooms</li>
+                    <li className="c-list__item">Kitchens</li>
+                    <li className="c-list__item">Fireplaces</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap l-grid__item--3-col-from-desk">
+              <div className="c-card">
+                <div className="c-card__header">
+                  <h2 className="c-card__title">Finishing</h2>
+                </div>
+                <div className="c-card__content">
+                  <ul className="c-list">
+                    <li className="c-list__item">Plastering</li>
+                    <li className="c-list__item">Door Hanging</li>
+                    <li className="c-list__item">Window Fitting</li>
+                    <li className="c-list__item">Skirting/Architrave</li>
+                    <li className="c-list__item">Electrics</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </Section>
-      <Section color="white">
+      </div>
+
+      {/*<Section color="gold">
         <div className="l-grid">
           <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap l-grid__item--3-col-from-desk">
             <div className="c-card">
@@ -126,6 +177,43 @@ const Home = () => {
                   <li className="c-list__item">Electrics</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+  </Section>*/}
+      <Section>
+        <div className="l-grid">
+          <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap">
+            <img
+              className="c-testimonial__image"
+              alt="bathroom"
+              src={services}
+            />
+          </div>
+          <div className="l-grid__item l-grid__item--12-col l-grid__item--6-col-from-lap">
+            <div className="c-testimonial">
+              <dl className="c-testimonial__list">
+                <div>
+                  <dt className="c-testimonial__title">Shelley Christie</dt>
+                  <dd className="c-testimonial__text">
+                    Fantastic work....very well priced and top professional
+                    results.
+                  </dd>
+                </div>
+                <div>
+                  <dt className="c-testimonial__title">Martyn Sign</dt>
+                  <dd className="c-testimonial__text">
+                    Great work. Honest and reliable. Couldn’t ask for more.
+                    Highly recommended!
+                  </dd>
+                </div>
+                <div>
+                  <dt className="c-testimonial__title">Andy Christie</dt>
+                  <dd className="c-testimonial__text">
+                    Loads of experience... gives good advice
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
         </div>

@@ -1,7 +1,35 @@
+.ct-section {
+    background-color: var(--g-color-background);
+    padding:  var(--g-spacing);
+}
+
+.ct-section__header {
+    background-color: var(--g-color-background);
+    padding-bottom: var(--g-spacing-x-small);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ct-section__header--underline {
+    border-bottom: 1px solid white;
+}
+
+.ct-section__title {
+    color: var(--g-color-text);
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.ct-section__content {
+    padding: var(--g-spacing-x-large) 0;
+}
+
 .c-section {
     padding: var(--g-spacing-2x-large);
     position: relative;
     color: grey;
+    font-size: 18px;
 }
 
 
@@ -33,6 +61,10 @@
 
 .c-section--white {
     background-color: white;
+}
+
+.c-section--gold {
+    background-color: var(--g-color-background);
 }
 
 @media only screen and (min-width: 42em) {

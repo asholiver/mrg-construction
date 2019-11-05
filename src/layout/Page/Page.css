@@ -5,13 +5,22 @@
 
 .c-company-title {
     font-size: var(--g-font-size-large);
-    color: var(--g-color-text);
+    color: grey;
+    font-weight: 400;
     display: none;
+}
+
+.c-title-company {
+    display: block;
 }
 
 
 @media only screen and (min-width: 55em) {
     .c-company-title {
         display: block;
+    }
+
+    .c-title-company {
+        display: none;
     }
 }
