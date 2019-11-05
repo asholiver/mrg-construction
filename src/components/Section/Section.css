@@ -9,7 +9,6 @@
 /* header */
 
 .c-section__header {
-    background-color: var(--g-color-background);
     padding-bottom: var(--g-spacing-x-small);
     display: flex;
     flex-direction: row-reverse;
@@ -38,7 +37,6 @@
     text-align: center;
 }
 
-
 .c-section--white {
     background-color: white;
 }
@@ -47,6 +45,11 @@
     background-color: grey;
     color: white;
 }
+
+.c-section--white .c-section__title {
+    color: var(--g-color-background);
+};
+
 
 @media only screen and (min-width: 42em) {
     .c-section {
