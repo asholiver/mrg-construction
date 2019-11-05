@@ -1,5 +1,6 @@
 import React from "react";
-import { Page, Section } from "./../layout";
+import { Page } from "../layout";
+import { Section } from "../components";
 import services from "./../services.jpg";
 
 const Contact = () => {
